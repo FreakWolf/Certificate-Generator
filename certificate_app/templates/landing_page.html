@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Certificate Generator</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Welcome to Certificate Generator</h1>
+    <p>Click the links below to generate or verify certificates:</p>
+    <ul>
+        <li><a href="{% url 'generate_certificate' %}">Generate Certificate</a></li>
+        <li><a href="{% url 'verify_certificate' %}">Verify Certificate</a></li>
+    </ul>
+</body>
+</html>

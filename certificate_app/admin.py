@@ -1,0 +1,1 @@
+from certificate_app.models import CertificateTemplate

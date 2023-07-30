@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Verification</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Certificate Verification</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="certificate_code">Certificate Code:</label>
+                <input type="text" name="certificate_code" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Verify Certificate</button>
+        </form>
+    </div>
+</body>
+</html>

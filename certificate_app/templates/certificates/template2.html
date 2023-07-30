@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template 2</title>
+    <!-- Add Custom CSS for this template -->
+    <link rel="stylesheet" href="{% static 'certificates/template2.css' %}">
+</head>
+<body>
+    <div class="certificate">
+        <h1>Certificate of Completion</h1>
+        <div class="content">
+            <h2>This is to certify that</h2>
+            <h3>{{ name }}</h3>
+            <p>has successfully completed the course</p>
+            <h3>{{ course }}</h3>
+            <p>Date of Completion: {{ completion_date }}</p>
+        </div>
+    </div>
+</body>
+</html>
